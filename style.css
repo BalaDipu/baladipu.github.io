@@ -25,7 +25,7 @@ html{
 .navbar .max-width{
     display: flex;
     align-items: center;
-    padding: 1%;
+    padding: 13.5px;
     justify-content: space-between;
 
 }
@@ -35,7 +35,7 @@ html{
     font-weight: 160;
     font-size: 45px;
     font-weight: 900;
-    margin-left: 30px;
+    margin-left: 6%;
 }
 
 .navbar .logo span{
@@ -785,6 +785,9 @@ html{
     }
     .menu-btn i.active:before{
         content:"\f00d";
+    }
+    .navbar .max-width{
+        padding: 1px;
     }
     .navbar .menu{
         position: fixed;
