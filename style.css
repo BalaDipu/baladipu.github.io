@@ -17,6 +17,7 @@
 }
 .navbar.sticky{
     background-color: black;
+    z-index: 1;
 }
 .navbar .max-width{
     display: flex;
