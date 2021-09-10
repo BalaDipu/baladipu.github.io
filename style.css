@@ -5,6 +5,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 .navbar{
     position:fixed;
     width: 100%;
@@ -49,6 +52,7 @@
     display: inline-block;
 }
 .navbar .menu li a{
+    display: block;
     color: rgb(255, 255, 255);
     font-size: 24px;
     font-weight: 600;
@@ -168,6 +172,7 @@
     background: url(images/aboutback.jpg) no-repeat center;
     background-size: cover;
     padding-bottom: 150px;
+    padding-top: 60px;
 }
 .center {
     display: block;
@@ -243,6 +248,7 @@
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 100px;
+    padding-top: 50px;
     background-color: black;
     color: white;
 }
