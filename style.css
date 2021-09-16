@@ -58,11 +58,33 @@ html{
     font-size: 24px;
     font-weight: 600;
     margin-left: 25px;
+    padding: 10px 20px;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.4s ease;
 }
 .navbar .menu li a:hover{
-    color: #db0000;
+    padding: 10px 20px;
+    background-color: #009fdb;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+.navbar.sticky .menu li a{
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 25px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+.navbar.sticky .menu li a:hover{
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+     color: #009fdb; 
+    border-radius: 6px;
+    
 }
 .navbar .menu .mode{
     color: black;
@@ -259,7 +281,7 @@ html{
 } */
 .project-header p{
     text-align: center;
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 700;
     padding-top: 100px;
     font-family: ubuntu,sans-serif;
@@ -299,7 +321,8 @@ html{
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    background-color: rgb(25, 29, 29);
+    background-color: rgb(214, 214, 214);
+    color: black;
     padding: 80px 40px;
     border-radius: 6px;
     cursor: pointer;
@@ -308,10 +331,7 @@ html{
 .project-content .swe-oj:hover{
     transform: scale(1.05);
     background-color: #009fdb;
-     text-align: center;
-    font-size: 36px;
-    font-weight: 550;
-    font-family: Poppins,sans-serif; 
+    color: #ffffff;
 }
 .project-content .pharmacy{
     width: 30%;
@@ -320,7 +340,8 @@ html{
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    background-color: rgb(25, 29, 29);
+    background-color: rgb(214, 214, 214);
+    color: black;
     padding: 80px 40px;
     border-radius: 6px;
     cursor: pointer;
@@ -329,10 +350,7 @@ html{
 .project-content .pharmacy:hover{
     transform: scale(1.05);
     background-color: #009fdb;
-     text-align: center;
-    font-size: 36px;
-    font-weight: 550;
-    font-family: Poppins,sans-serif; 
+    color: #ffffff;
 }
 .project-content .share-file{
     width: 30%;
@@ -341,7 +359,8 @@ html{
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    background-color: rgb(25, 29, 29);
+    background-color: rgb(214, 214, 214);
+    color: black;
     padding: 80px 40px;
     border-radius: 6px;
     cursor: pointer;
@@ -350,65 +369,36 @@ html{
 .project-content .share-file:hover{
     transform: scale(1.05);
     background-color: #009fdb;
-     text-align: center;
-    font-size: 36px;
-    font-weight: 550;
-    font-family: Poppins,sans-serif; 
+    color: #ffffff;
 }
 .project-content .col span{
     color: #009fdb;
-    font-family: ubuntu,sans-serif;
     transition: all 0.3s ease;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Poppins,sans-serif;
 }
 .project-content .col:hover span{
+    font-size: 40px;
     color: rgb(255, 255, 255);
-    font-family: ubuntu,sans-serif;
 }
-.project-content .swe-oj span{
+.project-content .col p{
+    padding-top: 15px;
     text-align: center;
-    font-size: 27px;
-    font-weight: 500;
-    font-family: Poppins,sans-serif;
-}
-.project-content .pharmacy span{
-    text-align: center;
-    font-size: 27px;
-    font-weight: 500;
-    padding-bottom: 20px;
-    font-family: Poppins,sans-serif;
-}
-.project-content .share-file span{
-    text-align: center;
-    font-size: 27px;
-    font-weight: 500;
-    font-family: Poppins,sans-serif;
-}
-.project-content .swe-oj p{
-    padding-top: 20px;
-    text-align: center;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     font-family: Poppins,sans-serif;
 }
-.project-content .pharmacy p{
-    padding-top: 20px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: Poppins,sans-serif;
-}
-.project-content .share-file p{
-    padding-top: 20px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: Poppins,sans-serif;
-}
+/* project end  */
+
+
+
 /* skill styling  */
 .skill-container{
     background: url(images/skilback2.png) no-repeat center;
     background-size: cover;
-    color: black;
+    color: rgb(37, 37, 37);
 }
 .skill-main-content{
     width: 50%;
@@ -464,11 +454,13 @@ html{
     color: #3f3f3f;
     font-family: ubuntu,sans-serif;
 }
+
+
+/* skills right  */
 .skill-right{
     width: 50%;
     float:right;
     text-align: left;
-    /* position: relative; */
     box-sizing: border-box;
     padding: 25px;
     padding-top: 40px;
@@ -488,27 +480,10 @@ html{
     zoom: 1;
 }
 
- /* .skill-right{
-    width: 50%;
-    float:right;
-    text-align: left;
-    padding: 25px;
-    padding-top: 60px;
-     margin-left: -30px;
-    margin-right: auto;
-    margin-top: 20px; 
- }
-.skill-right .row{
-    font-size: 21px;
-    font-weight: 600;
-    padding: 15px 15px;
-    font-family: Poppins,sans-serif; 
- }  */
-
-.mh-technical-skills{
+.technical-skills{
      padding-left: 20px;
  }
- .mh-technical-skill h3{
+ .technical-skills h3{
      font-size: 30px;
      line-height: 40px;
      text-align: center;
@@ -516,20 +491,16 @@ html{
      margin-bottom: 60px;
      font-family: ubuntu,sans-serif;
  }
- .mh-technical-progress li{
+ .technical-progress li{
      display: inline-block;
      margin: 0 auto;
      float: none;
      width: 48%;
      margin-bottom: 30px;
      text-align: center;
-     /* z-index: 999; */
      }
      .mh-progress{
          margin-bottom: 10px;
-
-         /* font: 900 1.14285/1 Cinzerl, cursive; */
-         /* color: white; */
      }
     .mh-progress.mh-progress-circle{
         display: inline-block;
@@ -543,13 +514,15 @@ html{
     .mh-progress path:nth-child(2){
         stroke: #009fdb !important;
     }
-    .mh-technical-skills h3{
+    .technical-skills h3{
         text-align: center;
         font-size: 36px;
         font-weight: 600;
         padding-bottom: 50px;
         font-family: Poppins,sans-serif;
     }
+    /* skill end  */
+
 
     /* contact */
     .contact-container{
@@ -614,7 +587,6 @@ html{
          width: 85%;
          float: left;
          margin-top: 20px;
-         /* white-space:normal; */
      }
      .row .inner-right .text-1{
          font-size: 18px;
@@ -629,6 +601,8 @@ html{
          text-align: left;
          color: #1a1a1a;
      }
+
+
      /*contact right */
      .contact-right{
          width: 50%;
@@ -672,7 +646,6 @@ html{
      }
      .contact-right .subject{
          width: 98%;
-         /* float: right; */
          border: 1px solid lightgrey;
          border-radius: 6px;
          outline: none;
@@ -687,7 +660,6 @@ html{
      }
      .contact-right .message{
          width: 98%;
-         /* float: right; */
          border: 1px solid lightgrey;
          border-radius: 6px;
          outline: none;
@@ -718,6 +690,10 @@ html{
          color: rgb(255, 0, 0);
          border: 2px solid rgb(255, 0, 0);
      }
+     /* contact end  */
+
+
+     /* footer styling start  */
 
      footer{
          background-color: black;
@@ -758,7 +734,10 @@ html{
     font-size: 24px;
     font-weight: 700;
     }
-/* responsive medio */
+    /* footer styling snd  */
+
+
+/* responsive media */
 @media (max-width:1300px){
     .home .max-width{
         margin-left: 0px;
@@ -776,7 +755,7 @@ html{
         padding: 0 50px;
     }
 }
-@media (max-width:947px){
+@media (max-width:941px){
     .max-width{
         padding: 0 50px;
     }
@@ -809,6 +788,14 @@ html{
         display: block;
     }
     .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 24px;
+    }
+    .navbar.sticky .menu li{
+        display: block;
+    }
+    .navbar.sticky .menu li a{
         display: inline-block;
         margin: 20px 0;
         font-size: 24px;
@@ -964,7 +951,7 @@ html{
     .contact-right .name{
         width: 98%;
     }
-    .mh-technical-progress li{
+    .technical-progress li{
         width: 100%;
         text-align: center;
         }
