@@ -45,6 +45,9 @@ html{
     color: rgb(255, 255, 255);
     transition: color 0.3s ease;
 }
+.navbar:hover .logo a{
+    color: rgb(255, 0, 0);
+}
 .navbar .logo a:hover{
     color: rgb(255, 0, 0);
 }
@@ -113,6 +116,7 @@ html{
     color: rgb(255, 255, 255);
     min-height: 500px;
     background-color: rgb(26, 25, 25);
+    transition: color 0.3s ease;
 }
 .home .max-width{
     margin: auto 0 auto 40px;
@@ -141,6 +145,9 @@ html{
 .home .home-content .text-2{
     color: rgb(255, 255, 255);
     transition: color 0.3s ease;
+}
+.home:hover .text-2{
+    color: rgb(255, 0, 0);
 }
 .home .home-content .text-2:hover{
     color: rgb(255, 0, 0);
@@ -380,7 +387,6 @@ html{
     font-family: Poppins,sans-serif;
 }
 .project-content .col:hover span{
-    font-size: 40px;
     color: rgb(255, 255, 255);
 }
 .project-content .col p{
@@ -477,7 +483,7 @@ html{
     box-sizing: border-box;
     padding: 25px;
     padding-top: 40px;
-     margin-left: -30px;
+    margin-left: -30px;
     margin-right: auto;
     margin-top: 100px;
  }
@@ -494,14 +500,14 @@ html{
 }
 
 .technical-skills{
-     padding-left: 20px;
+     padding-left: 10px;
  }
  .technical-skills h3{
      font-size: 30px;
-     line-height: 40px;
+     line-height: 30px;
      text-align: center;
      font-weight: 400;
-     margin-bottom: 60px;
+     margin-bottom: 10px;
      font-family: ubuntu,sans-serif;
  }
  .technical-progress li{
@@ -509,7 +515,8 @@ html{
      margin: 0 auto;
      float: none;
      width: 48%;
-     margin-bottom: 30px;
+     margin-bottom: 10%;
+     box-sizing: border-box;
      text-align: center;
      }
      .mh-progress{
@@ -518,8 +525,13 @@ html{
     .mh-progress.mh-progress-circle{
         display: inline-block;
         position: relative;
-        width: 120px;
-        height: 120px;
+        font-size: 24px;
+        width: 100px;
+        height: 100px;
+    }
+    .pr-skill-name{
+        color: #000;
+        font-size: 21px;
     }
     .mh-progress path:nth-child(1){
         stroke: #ffffff;
@@ -531,7 +543,7 @@ html{
         text-align: center;
         font-size: 36px;
         font-weight: 600;
-        padding-bottom: 50px;
+        padding-bottom: 40px;
         font-family: Poppins,sans-serif;
     }
     /* skill end  */
