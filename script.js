@@ -14,7 +14,7 @@ $(document).ready(function(){
 });
 
 var typing = new Typed(".typing",{
-    strings: ["Software Engineering Undergrad Student","Software Engineering Trainee", "Website Developer", "Sportsman"],
+    strings: ["SWE undergrad student.","Software Eng. trainee.", "website developer.", "sportsman."],
     typeSpeed:60,
     backSpeed:50,
     loop:true
