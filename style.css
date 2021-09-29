@@ -131,26 +131,80 @@ html{
     font-size: 70px;
     font-weight: 600;
     margin-left: -3px;
+    color: #fff;
+    display: flex;
     /* font-family: ubuntu,sans-serif; */
+}
+.typed-cursor {
+    margin-right:10px;
 }
 
 .home .home-content .text-2 .dipankar{
     color: rgb(255, 255, 255);
     border-radius: 5px;
 }
-.home .home-content .text-2 span{
+.bala2,
+.bala4{
     color: #009fdb;
 }
-.home .home-content .text-2{
+/* .home .home-content .text-2{
     color: rgb(255, 255, 255);
     transition: color 0.3s ease;
+} */
+.bala1,
+.bala3{
+    transition: color 0.3s ease;
+    color: rgb(255, 255, 255);
 }
-.home:hover .text-2{
+
+.home:hover.home .home-content .text-2 .bala1,
+.home:hover.home .home-content .text-2 .bala3{
     color: rgb(255, 0, 0);
 }
-.home .home-content .text-2:hover{
-    color: rgb(255, 0, 0);
+
+
+/* bala animation start  */
+ @keyframes balaBounce{
+    0%{
+        opacity: .25;
+        transform: translateY(-200%);
+    }
+    40%{
+        transform: translateY(0);
+    }
+    55%{
+        transform: translateY(-12px) rotate(30deg);
+    }
+    70%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    85%{
+        transform: translateY(-6px) rotate(-15deg);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+
+.bala1,
+.bala2,
+.bala3,
+.bala4{
+    opacity: 0;
+    animation:balaBounce .5s forwards;
+}
+.bala2{
+    animation-delay: 0.5s;
+}
+.bala3{
+    animation-delay: 1s;
+}
+.bala4{
+    animation-delay: 1.5s;
+}
+/* bala animation end  */
 .home .home-content .text-3{
     font-size: 27px;
     font-weight: 650;
@@ -234,7 +288,7 @@ html{
 }
 .home .home-content .text-2{
     font-size: 60px;
-    font-weight: 950;
+    font-weight: 800;
 }
 .home .home-content .text-3{
     font-size: 26px;
@@ -293,7 +347,7 @@ html{
 }
 .home .home-content .text-2{
     font-size: 60px;
-    font-weight: 950;
+    font-weight: 800;
 }
 .home .home-content .text-3{
     font-size: 26px;
@@ -347,7 +401,7 @@ html{
 }
 .home .home-content .text-2{
     font-size: 45px;
-    font-weight: 900;
+    font-weight: 800;
 }
 .home .home-content .text-3{
     font-size: 21px;
@@ -370,7 +424,7 @@ html{
 }
 .navbar .logo{
     font-size: 32px;
-    font-weight: 850;
+    font-weight: 800;
 }
 .navbar .max-width{
     padding: 12px;
@@ -1068,6 +1122,12 @@ right: 0;
     border: 2px solid #009fdb;
     transition: color 0.3s ease-in-out;
     cursor: pointer;
+}
+.skill-main-content .toggle-btn:hover{
+    background-color: #fff;
+    color:rgb(255, 0, 0);
+    border: 2px solid rgb(255, 0, 0);
+
 }
 .toggle-btn {display: none;}
 .toggle-btn-visible {display: block;}

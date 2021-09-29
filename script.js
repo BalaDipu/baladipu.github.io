@@ -21,7 +21,7 @@ var typing = new Typed(".typing",{
 });
 var typing = new Typed(".typing-2",{
     strings: ["DIPANKAR","DIPU"],
-    typeSpeed:100,
-    backSpeed:80,
+    typeSpeed:120,
+    backSpeed:60,
     loop:true,
 });
