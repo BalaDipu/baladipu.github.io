@@ -11,6 +11,7 @@ html{
 .navbar{
     position:fixed;
     width: 100%;
+    z-index: 9999;
     transition: all 0.3s ease;
 }
 .max-width{
@@ -463,12 +464,13 @@ html{
     font-weight: 400;
 }
 .home .home-content .contact-me a{
-    padding: 10px 17px;
+    display: none;
+    /* padding: 10px 17px;
     margin-top: 12px;
     border-radius: 4px;
     font-size: 15px;
     font-weight: 500;
-    border: 2px solid #009fdb;
+    border: 2px solid #009fdb; */
 }
 .navbar .logo{
     font-size: 23px;
@@ -511,12 +513,13 @@ html{
     font-weight: 400;
 }
 .home .home-content .contact-me a{
-    padding: 8px 15px;
+    display: none;
+    /* padding: 8px 15px;
     margin-top: 12px;
     border-radius: 4px;
     font-size: 13px;
     font-weight: 500;
-    border: 2px solid #009fdb;
+    border: 2px solid #009fdb; */
 }
 .navbar .logo{
     font-size: 19px;
