@@ -37,15 +37,37 @@ html{
     margin-left: 6%;
 }
 .navbar .logo span{
-    color: #009fdb;
+    background: -webkit-linear-gradient( #00b7ff,rgb(25, 0, 255) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .navbar .logo a{
-    color: rgb(255, 255, 255);
+    background: -webkit-linear-gradient( rgb(25, 0, 255), #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: color 0.3s ease;
 }
-.navbar:hover .logo a,
-.navbar .logo a:hover{
-    color: rgb(255, 0, 0);
+.navbar.sticky .logo a{
+    background: -webkit-linear-gradient( rgb(107, 91, 255), #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: color 0.3s ease;
+}
+.navbar.sticky .logo span{
+    background: -webkit-linear-gradient( #5dd1ff,rgb(83, 76, 141) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.navbar.sticky:hover .logo span{
+    background: -webkit-linear-gradient( #c0ff2d,rgb(139, 89, 255) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar:hover .logo span{
+    background: -webkit-linear-gradient( #010224,rgb(80, 4, 255) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .navbar .menu li{
     list-style: none;
@@ -131,7 +153,7 @@ html{
     font-size: 70px;
     font-weight: 600;
     margin-left: -3px;
-    color: #fff;
+    font-size: 72px;
     display: flex;
     /* font-family: ubuntu,sans-serif; */
 }
@@ -143,26 +165,95 @@ html{
     color: rgb(255, 255, 255);
     border-radius: 5px;
 }
-.bala2,
-.bala4{
-    color: #009fdb;
+/* dipankar animation start */
+@keyframes dipankarBounce {
+    0%{
+        opacity: .25;
+        transform: translateY(-200%);
+    }
+    40%{
+        transform: translateY(0);
+    }
+    55%{
+        transform: translateY(-12px) rotate(30deg);
+    }
+    70%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    85%{
+        transform: translateY(-6px) rotate(-15deg);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-/* .home .home-content .text-2{
-    color: rgb(255, 255, 255);
-    transition: color 0.3s ease;
-} */
+.dipankar1,
+.dipankar2,
+.dipankar3,
+.dipankar4,
+.dipankar5,
+.dipankar6,
+.dipankar7,
+.dipankar8{
+    opacity: 0;
+    animation: dipankarBounce .5s  forwards;
+    background: -webkit-linear-gradient( rgb(25, 0, 255), #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.dipankar2{
+    animation-delay: 0.2s;
+}
+.dipankar3{
+    animation-delay: 0.4s;
+}
+.dipankar4{
+    animation-delay: 0.6s;
+}
+.dipankar5{
+    animation-delay: 0.8s;
+}
+.dipankar6{
+    animation-delay: 1s;
+}
+.dipankar7{
+    animation-delay: 1.2s;
+}
+.dipankar8{
+    animation-delay: 1.4s;
+}
+
+/* dipankar animation end  */
+.dipankar8{
+    margin-right: 2%;
+}
 .bala1,
-.bala3{
-    transition: color 0.3s ease;
-    color: rgb(255, 255, 255);
+.bala2,
+.bala3,
+.bala4{
+    background: -webkit-linear-gradient( rgb(25, 0, 255), #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .4s ease-in-out ;
 }
-
-.home:hover.home .home-content .text-2 .bala1,
-.home:hover.home .home-content .text-2 .bala3{
-    color: rgb(255, 0, 0);
+.text-2:hover .dipankar1,
+.text-2:hover .dipankar2,
+.text-2:hover .dipankar3,
+.text-2:hover .dipankar4,
+.text-2:hover .dipankar5,
+.text-2:hover .dipankar6,
+.text-2:hover .dipankar7,
+.text-2:hover .dipankar8,
+.text-2:hover .bala1,
+.text-2:hover .bala2,
+.text-2:hover .bala3,
+.text-2:hover .bala4{
+    background: -webkit-linear-gradient( #59d0ff,rgb(25, 0, 255) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
-
 /* bala animation start  */
  @keyframes balaBounce{
     0%{
@@ -216,15 +307,16 @@ html{
     font-weight: 650;
     margin-left: -3px;
     padding-top: 0px;
-    color: #009fdb;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #009fdb, #f70606, #f70606, #009fdb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: color 0.3s ease;
 }
 .home .home-content .text-3 span a:hover{
-    background:rgb(255, 0, 0) ;
-    color: rgb(167, 167, 167);
-    text-align: center;
-    padding-top: 0px;
-    border-radius: 5px;
+    background-image: linear-gradient(to right,  #f70606,#009fdb, #009fdb,#f70606);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .home .home-content .text-4{
     font-size: 27px;
@@ -237,16 +329,20 @@ html{
     color: white;
     padding: 12px 36px;
     margin-top: 20px;
-    border-radius: 6px;
+    border-radius: 50px;
     font-size: 27px;
     font-weight: 500;
-    border: 2px solid #009fdb;
+    background-size: 300% 100%;
+    background-image: linear-gradient(to right, #009fdb, #f70606, #f70606, #009fdb);
+    box-shadow: 0 6px 25px 0 rgba(49, 196, 190, 0.75);
     transition: color 0.3s ease-in-out;
 }
 .home .home-content .contact-me a:hover{
-   background-color: transparent;
-   color: rgb(255, 0, 0);
-   border: 2px solid rgb(255, 0, 0);
+    background-position: 100% 0;
+}
+.home .home-content .contact-me a:active {
+    background-image: linear-gradient(to right, #009fdb, #ffffff);
+    color: #1a1a1a;
 }
 
 /* home page responsive  */
@@ -305,7 +401,6 @@ html{
 .home .home-content .contact-me a{
     padding: 12px 23px;
     margin-top: 60px;
-    border-radius: 6px;
     font-size: 24px;
     font-weight: 500;
 }
@@ -364,7 +459,7 @@ html{
 .home .home-content .contact-me a{
     padding: 12px 23px;
     margin-top: 60px;
-    border-radius: 6px;
+    border-radius: 50px;
     font-size: 24px;
     font-weight: 500;
 }
@@ -418,7 +513,7 @@ html{
 .home .home-content .contact-me a{
     padding: 11px 23px;
     margin-top: 30px;
-    border-radius: 6px;
+    border-radius: 50px;
     font-size: 21px;
     font-weight: 550;
 }
@@ -464,10 +559,9 @@ html{
 .home .home-content .contact-me a{
     padding: 11px 19px;
     margin-top: 12px;
-    border-radius: 6px;
+    border-radius: 50px;
     font-size: 17px;
     font-weight: 500;
-    border: 2px solid #009fdb;
 }
 .navbar .logo{
     font-size: 25px;
