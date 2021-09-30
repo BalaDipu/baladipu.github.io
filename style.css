@@ -20,7 +20,7 @@ html{
     margin: auto;
 }
 .navbar.sticky{
-    background-color: black;
+    background-image: linear-gradient(to right bottom, rgb(3, 23, 43), #1b1b47);
     z-index: 9999;
 }
 .navbar .max-width{
@@ -85,9 +85,7 @@ html{
 }
 .navbar .menu li a:hover{
     padding: 10px 20px;
-    background-color: #009fdb;
-    /* background-color: #ffffff;
-    color: #009fdb;  */
+    background-color: #1b1b47;
     box-sizing: border-box;
     border-radius: 6px;
 }
@@ -105,7 +103,7 @@ html{
     padding: 10px 20px;
     background-color: #ffffff;
     box-sizing: border-box;
-     color: #009fdb; 
+     color: #1b1b47; 
     border-radius: 6px;
     
 }
@@ -335,7 +333,7 @@ html{
     background-size: 300% 100%;
     background-image: linear-gradient(to right, #009fdb, #f70606, #f70606, #009fdb);
     box-shadow: 0 6px 25px 0 rgba(49, 196, 190, 0.75);
-    transition: color 0.3s ease-in-out;
+    transition: color 0s ease-in-out;
 }
 .home .home-content .contact-me a:hover{
     background-position: 100% 0;
@@ -723,7 +721,7 @@ html{
 .slide-text{
     position: absolute;
     bottom: 0;
-    background-color: rgba(0,0,0,.7);
+    background-image: linear-gradient(to right,rgba(247,6,6,0.3)  ,rgba(0,159,219, 0.3), rgba(0,159,219, 0.3),rgba(247,6,6,0.3));
     color: #fff;
     width: 100%;
     padding: 18px;
@@ -792,7 +790,9 @@ right: 0;
     font-family: Poppins,sans-serif;
 }
 .sidebar .sidebar-intro span{
-    color: #009fdb;
+    background-image: linear-gradient(to right, #009fdb, #f70606, #f70606, #009fdb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .sidebar p{
     padding-top: 20px;
@@ -806,18 +806,22 @@ right: 0;
     display: inline-block;
     background-color: #009fdb;
     color: white;
-    padding: 9px 27px;
+    padding: 12px 36px;
     margin-top: 20px;
-    border-radius: 6px;
-    font-size: 22px;
+    border-radius: 50px;
+    font-size: 24px;
     font-weight: 500;
-    border: 2px solid #009fdb;
-    transition: color 0.3s ease-in-out;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, #009fdb, #f70606, #f70606, #009fdb);
+    box-shadow: 0 6px 25px 0 rgba(49, 196, 190, 0.75);
+    transition: color 0s ease-in-out;
 }
 .sidebar a:hover{
-    background-color: transparent;
-    color: rgb(255, 0, 0);
-    border: 2px solid rgb(255, 0, 0);
+    background-position: 100% 0;
+}
+.sidebar a:active{
+    background-image: linear-gradient(to right, #009fdb, #ffffff);
+    color: #1a1a1a;
 }
 /* clearfix method  */ 
 .group:before,
@@ -985,7 +989,7 @@ right: 0;
     margin-right: auto;
     padding-bottom: 100px;
     padding-top: 50px;
-    background-color: black;
+    background-image: linear-gradient(to right bottom, rgb(3, 15, 26), #36366b);
     color: white;
 }
 .project-header p{
@@ -993,6 +997,10 @@ right: 0;
     font-size: 55px;
     font-weight: 700;
     padding-top: 100px;
+    background-size: 100% 100%;
+    background-image: linear-gradient(to right, #ffffff , #7374be);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: ubuntu,sans-serif;
 }
 
@@ -1030,7 +1038,9 @@ right: 0;
     color: #ffffff;
 }
 .project-content .col span{
-    color: #009fdb;
+    background-image: linear-gradient(to right, #009fdb, #f70606, #f70606, #009fdb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: all 0.3s ease;
     text-align: center;
     font-size: 30px;
@@ -1038,7 +1048,9 @@ right: 0;
     font-family: Poppins,sans-serif;
 }
 .project-content .col:hover span{
-    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, #ebebeb ,#ebebeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .project-content .col p{
     padding-top: 15px;
@@ -1186,7 +1198,9 @@ right: 0;
     font-family: ubuntu,sans-serif;
 }
 .skill-content-area .main-content-intro span{
-    color: #009fdb;
+    background-image: linear-gradient(to right, #009fdb, #f70606, #f70606, #009fdb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .skill-main-content p{
@@ -1208,20 +1222,24 @@ right: 0;
     display: inline-block;
     background-color: #009fdb;
     color: white;
-    padding: 3px 12px;
+    padding: 8px 18px;
     margin-top: 20px;
-    border-radius: 6px;
+    border-radius: 50px;
+    cursor: pointer;
     font-size: 18px;
     font-weight: 400;
-    border: 2px solid #009fdb;
-    transition: color 0.3s ease-in-out;
-    cursor: pointer;
+    background-size: 300% 100%;
+    background-image: linear-gradient(to right, #009fdb, #f70606, #f70606, #009fdb);
+    box-shadow: 0 6px 25px 0 rgba(49, 196, 190, 0.75);
+    transition: color 0s ease-in-out;
 }
 .skill-main-content .toggle-btn:hover{
-    background-color: #fff;
-    color:rgb(255, 0, 0);
-    border: 2px solid rgb(255, 0, 0);
+    background-position: 100% 0;
 
+}
+.skill-main-content .toggle-btn:active {
+    background-image: linear-gradient(to right, #009fdb, #ffffff);
+    color: #1a1a1a;
 }
 .toggle-btn {display: none;}
 .toggle-btn-visible {display: block;}
@@ -1238,7 +1256,9 @@ right: 0;
     font-size: 50px;
     font-weight: 700;
     padding-top: 70px;
-    color: #3f3f3f;
+    background-image: linear-gradient(to right, #4e4e4e, #0087f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: ubuntu,sans-serif;
 }
 
@@ -1357,7 +1377,7 @@ right: 0;
             margin-left: 60px;
             align-self: center;
             margin-top: 10px;
-            font-size: 18px;
+            font-size: 17px;
         }
         .skill-main-content .more-text {
             margin-left: 60px;
@@ -1404,7 +1424,7 @@ right: 0;
             margin-left: 60px;
             align-self: center;
             margin-top: 10px;
-            font-size: 18px;
+            font-size: 17px;
         }
         .skill-main-content .more-text {
             margin-left: 60px;
@@ -1449,7 +1469,7 @@ right: 0;
             margin-left: 60px;
             align-self: center;
             margin-top: 10px;
-            font-size: 18px;
+            font-size: 16px;
         }
         .skill-main-content .more-text {
             margin-left: 60px;
@@ -1591,7 +1611,9 @@ right: 0;
         font-size: 50px;
         font-weight: 700;
         padding-top: 70px;
-        color: #3f3f3f;
+        background-image: linear-gradient(to right, #747474, #0087f5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-family: ubuntu,sans-serif;
      }
      .contact-left{
@@ -1723,17 +1745,22 @@ right: 0;
          color: white;
          padding: 10px 25px;
          margin-top: 10px;
-         border-radius: 6px;
+         border-radius: 50px;
          font-size: 18px;
          font-weight: 400;
-         border: 2px solid #009fdb;
-         transition: color 0.3s ease-in-out;
+         background-size: 300% 100%;
+         background-image: linear-gradient(to right, #009fdb, #f70606, #f70606, #009fdb);
+         box-shadow: 0 6px 25px 0 rgba(49, 196, 190, 0.75);
+         transition: color 0s ease-in-out;
      }
      .contact-right .submit:hover{
-         background-color: transparent;
-         color: rgb(255, 0, 0);
-         border: 2px solid rgb(255, 0, 0);
+        background-position: 100% 0;
      }
+     .contact-right .submit:active {
+        background-image: linear-gradient(to right, #009fdb, #ffffff);
+        color: #1a1a1a;
+    }
+    
      /* contact end  */
      /* contact responsive  */
      @media (max-width:1195px){
@@ -1807,7 +1834,6 @@ right: 0;
         .contact-right .submit {
             padding: 8px 18px;
             margin-top: 8px;
-            border-radius: 6px;
             font-size: 17px;
             font-weight: 450;
         }
@@ -1855,8 +1881,7 @@ right: 0;
         .contact-right .submit {
             padding: 7px 15px;
             margin-top: 5px;
-            border-radius: 5px;
-            font-size: 17px;
+            font-size: 16px;
             font-weight: 400;
         }
         .contact-container {
@@ -1903,7 +1928,6 @@ right: 0;
         .contact-right .submit {
             padding: 7px 15px;
             margin-top: 5px;
-            border-radius: 5px;
             font-size: 16px;
             font-weight: 400;
         }
@@ -1951,7 +1975,6 @@ right: 0;
         .contact-right .submit {
             padding: 7px 15px;
             margin-top: 5px;
-            border-radius: 5px;
             font-size: 14px;
             font-weight: 400;
         }
@@ -1962,7 +1985,7 @@ right: 0;
      /* footer styling start  */
 
      footer{
-         background-color: black;
+        background-image: linear-gradient(to right bottom, rgb(3, 23, 43), #1b1b47);
          color: blanchedalmond;
          padding: 40px ;
      }
@@ -2135,7 +2158,6 @@ right: 0;
     }
     .sidebar a{
         margin-top: 20px;
-        border-radius: 4px;
         padding: 7px 21px;
         font-size: 17px;
         font-weight: 400; 
