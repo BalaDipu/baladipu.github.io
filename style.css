@@ -20,6 +20,7 @@ html{
     margin: auto;
 }
 .navbar.sticky{
+    background-color: #1b1b47;
     background-image: linear-gradient(to right bottom, rgb(3, 23, 43), #1b1b47);
     z-index: 9999;
 }
@@ -755,9 +756,9 @@ right: 0;
 .cycle-slideshow{
     transition: opacity .5s;
 }
-.cycle-slideshow:hover{
+/* .cycle-slideshow:hover{
     opacity: 0.85;
-}
+} */
 .cycle-pager{
     position: absolute;
     top: 20px;
